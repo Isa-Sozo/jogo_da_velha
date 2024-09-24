@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(-45deg, rgb(0, 0, 0), rgb(141, 0, 206), rgb(141, 0, 206), rgb(0, 0, 0));
+    /* background-color: rgb(147, 75, 241); */
+    font-family:'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.container {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    background-color: rgb(238, 195, 255);
+    border: 3px solid #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(191, 142, 255);
+}
+
+button:disabled {
+    background-color: #f5f5f5;
+    color: black;
+    border-color: black;
+    cursor: not-allowed;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 24px;
+    color: rgb(19, 0, 104);
+}
